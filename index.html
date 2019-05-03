@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sexting</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <style>
+      body {
+          background-color: #f1f1f1;
+      }
+      h1 {
+          color: #1a1617;
+      }
+      #content {
+          background-color: #ffffff;
+          width: 50vw;
+          position: absolute;
+          max-width: 800px;
+          top: 50%;
+          left: 50%;
+          min-width: 640px;
+          transform: translate(-50%, -50%);
+          padding: 40px 20px;
+      }
+      #content img {
+          margin: 0 auto 10px;
+          display: block
+      }
+      #content a {
+          border: solid 3px #371d16;
+          border-radius: 50%;
+          position: relative;
+          color: #371d16;
+          text-decoration: none;
+          letter-spacing: .6px;
+          text-transform: uppercase;
+          text-align: center;
+          font-family: "Arial";
+          font-size: 20px;
+          display: block;
+          position: relative;
+          width: calc(50% - 26px);
+          float: left;
+          min-height: 200px;
+          height: 10.5vw;
+          margin: 30px 10px 0;
+          box-shadow: inset 6px -6px 0 rgba(255, 255, 255, .4), -6px 6px 0 rgba(255, 255, 255, .4);
+          transition: .3s all;
+      }
+      #content a:hover {
+          font-size: 24px;
+      }
+      #content a p {
+          margin-top: 25%;
+      }
+      #fr {
+          background-color: #e94e1b;
+          transform: rotate(-8deg) translateX(36px) scale(1.03) scaleY(1.06);
+      }
+      #fr::after {
+          content: "FR";
+          position: absolute;
+          display: block;
+          width: 90%;
+          top: 33%;
+      }
+      #fr:hover {
+          background-color: #ffffff;
+          color: #e94e1b;
+          border: solid 3px #e94e1b;
+      }
+      #nl {
+          background-color: #70c4c4;
+          transform: rotate(7deg) translateX(-36px) scale(.96);
+      }
+      #nl::after {
+          content: "NL";
+          position: absolute;
+          display: block;
+          width: 90%;
+          top: 33%;
+      }
+      #nl:hover {
+          background-color: #ffffff;
+          box-shadow: none;
+          color: #70c4c4;
+          border: solid 3px #70c4c4;
+      }
+      @media only screen and (min-width: 640px) {
+          #fr::after,
+          #nl::after {
+              display: none;
+          }
+      }
+      @media only screen and (max-width: 640px) {
+          body {
+              background-color: #ffffff;
+          }
+          #content {
+              width: 100%;
+              padding: 10px;
+              min-width: unset;
+          }
+          #content a {
+              min-height: 120px;
+          }
+          #fr {
+              transform: rotate(-8deg) translateX(24px) scale(1.03) scaleY(1.06);
+          }
+          #nl {
+              transform: rotate(7deg) translateX(-24px) scale(.96);
+          }
+          #fr p,
+          #nl p {
+            display: none;
+          }
+      }
+</style>
+
+</head>
+
+<body>
+    <div id="content">
+        <img src="logo.png">
+        
+        <a href="#" id="fr">
+            <p>
+            Continuer en <br>français
+                </p>
+        </a>
+        
+        <a href="#" id="nl">
+            <p>
+            Verdergaan in het <br>Nederlands
+                </p>
+        </a>
+    </div>
+</body>
+</html>
